@@ -1078,6 +1078,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2651081"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c4dc66a2-dd34-406f-9678-41672c9fa90b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/d4225140-81df-42e7-abd7-e679e5ab5187/ca7b1f9b-58b8-4871-9709-418cd127e3a8")
 		(sheetname "/ESP32-C3 + SX1281 Core (UFL)/")
 		(sheetfile "esp32c3_sx1281_lite.kicad_sch")
@@ -1948,6 +1959,17 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C5349953"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9ff79413-f6a6-4c07-bdcc-3b7d18bcb9fe")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -3705,6 +3727,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C152351"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6a39e08f-2d42-4055-8aae-911579e20e8f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/d4225140-81df-42e7-abd7-e679e5ab5187/4b265099-bb68-4381-b438-859240b7c41d")
 		(sheetname "/ESP32-C3 + SX1281 Core (UFL)/")
 		(sheetfile "esp32c3_sx1281_lite.kicad_sch")
@@ -5254,6 +5287,39 @@
 					(size 1.27 1.27)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C2858491"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "570e517f-cc70-42d5-acba-f8254ab97a02")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Espressif Systems"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "c0c18d8c-2f38-4e62-be6a-517811ad890f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ESP32-C3FH4"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "b705af5b-3f32-43fa-8072-1ae7f8fb9ab1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property ki_fp_filters "QFN*1EP*5x5mm*P0.5mm*EP3.7x3.7mm*")
@@ -7010,6 +7076,39 @@
 					(size 1.27 1.27)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C383402"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "6e8e84e5-8a5d-4572-b8ee-efc40f2d0400")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "2fdc52f6-ae88-4760-98c3-00bba05e44ce")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MLZ2012M150WT000"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "ab812c8c-ce6b-43dc-b084-add778eea507")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
