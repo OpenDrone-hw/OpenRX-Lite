@@ -40,7 +40,10 @@ What pairs with what, and what is available:
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md). Public contributors use KiCad 10 and
+the public library submodule; clone setup, native checks and preview options
+are in [AGENTS.md, Environment](AGENTS.md#environment). Private Incutec tooling
+is an optional maintainer shortcut, not a prerequisite.
 
 ## License
 

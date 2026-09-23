@@ -106,11 +106,18 @@ kicad-cli pcb drc --schematic-parity --refill-zones hardware/OpenRX-Lite.kicad_p
 kicad-cli sch export netlist --format kicadsexpr -o /tmp/OpenRX-Lite.net hardware/OpenRX-Lite.kicad_sch
 ```
 
+Public contributors can clone this repository and initialize its public library
+submodule with `git submodule update --init --recursive`. Open
+`hardware/OpenRX-Lite.kicad_pro` in KiCad 10; ERC, DRC and netlist export above
+use native KiCad tools, without the private Incutec workspace.
+
 On macOS `kicad-cli` is at
 `/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli`, and `pcbnew` imports
-only under KiCad's bundled Python. Reusable scripts for renders, STEP export,
-and packaging art come from Incutec hardware tooling. The OpenDrone release
-standard is
+only under KiCad's bundled Python. `<hardware-tooling>` below is an internal
+shortcut for maintainers with private Incutec tooling access, not a public
+clone dependency. Public preview images can use KiCad's 3D Viewer or native
+`kicad-cli pcb render`; review the output before replacing README images.
+The OpenDrone release standard is
 [RELEASES.md](https://github.com/OpenDrone-hw/.github/blob/main/RELEASES.md).
 Board-specific scripts, where a board has any, live in `hardware/tools/`.
 
@@ -150,11 +157,12 @@ Identical in every OpenDrone board repo. Do not edit here; edit the template.
 
 ## By task
 
-Board-specific paths are in Environment above. `KPY` is KiCad's bundled
-Python named there.
+Board-specific paths are in Environment above. Internal commands use `KPY`
+for KiCad's bundled Python; public workflows do not require it.
 
 - Check the design: run the ERC and DRC commands in Environment before every pull request.
-- Add a part: place it from the `OpenDrone` library if `hardware/KiCad-Library/PARTS-USED.md` lists it; otherwise import it into `lib` with `$KPY <hardware-tooling>/hardware/kicad/import_part.py` (read `--help` first), KiCad closed.
-- Render the board for the README: `$KPY <hardware-tooling>/hardware/kicad/render_board.py hardware/OpenRX-Lite.kicad_pcb --outdir images`, KiCad closed.
+- Add a part: reuse the `OpenDrone` library first. For an uncatalogued part, use the public `easyeda2kicad` import route named in Rules and review the result in KiCad. Internal import shortcut: `$KPY <hardware-tooling>/hardware/kicad/import_part.py` (read `--help` first), KiCad closed.
+- Preview the board: use KiCad's 3D Viewer, or `kicad-cli pcb render --side top --output /tmp/OpenRX-Lite-top.png hardware/OpenRX-Lite.kicad_pcb` (use `--side bottom` and a separate output for the reverse). This is a visual preview, not design validation or a release export.
+- Internal README render shortcut: `$KPY <hardware-tooling>/hardware/kicad/render_board.py hardware/OpenRX-Lite.kicad_pcb --outdir images`, KiCad closed.
 - Analyse the netlist: export it with the netlist command in Environment, then read it with a script; never hand-write a second BOM.
 - Update the shared library: `git submodule update --remote hardware/KiCad-Library`, run DRC, commit as its own reviewed change.
