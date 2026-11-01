@@ -40,7 +40,9 @@ What pairs with what, and what is available:
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+To load the KiCad-Library, use `git submodule update --init` or `git clone [...] --recurse-submodules`
+
+Furthermore, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
