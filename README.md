@@ -43,7 +43,7 @@ What pairs with what, and what is available:
 
 ## Contributing
 
-To load the KiCad-Library, use `git submodule update --init` or `git clone [...] --recurse-submodules`
+To load the KiCad-Library, use `git submodule update --init` or `git clone --recurse-submodules https://github.com/OpenDrone-hw/OpenRX-Lite`
 
 Furthermore, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
