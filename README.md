@@ -1,8 +1,11 @@
 # OpenRX Lite
 
-Open-source 2.4 GHz ExpressLRS receiver for small FPV aircraft. OpenRX Lite
+Open-source 2.4 GHz ExpressLRS radio control receiver module with telemetry,
+for any radio-controlled build: cars, boats, robots and aircraft. OpenRX Lite
 combines an ESP32-C3 and SX1281 with an on-board ceramic link antenna in a
 10.0 x 11.5 mm board.
+It passes the received channels over serial (CRSF) on its RX and TX pads to a
+controller, for example a flight controller or a vehicle or robot controller.
 
 <p>
 <img src="images/front.png" width="400" alt="OpenRX Lite front" />
